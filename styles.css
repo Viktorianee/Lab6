@@ -1,0 +1,51 @@
+body {
+  font-family: Georgia, serif;
+  color: #000;
+  background: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+article {
+  margin-bottom: 40px;
+  page-break-inside: avoid;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-style: italic;
+  color: #444;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+@media print {
+  * {
+    color: black !important;
+    background: white !important;
+  }
+
+  img {
+    page-break-inside: avoid;
+  }
+}
